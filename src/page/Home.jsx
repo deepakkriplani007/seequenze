@@ -51,7 +51,7 @@ useEffect(()=>{
  <>
  <Navbar/>
 <Sibebar/>
-<div className="p-4 bg-[#F8F8F8] w-screen h-full sm:ml-64">
+<div className="flex flex-col justify-center content-center p-4 bg-[#F8F8F8] h-full sm:ml-64">
    <div className="p-4 mt-14">
   <h1 className='pl-4 text-5xl font-bold'>My Project</h1>
       <button onClick={handleModalOpen} className='mt-5 p-5 bg-white inline-block rounded-md'>
@@ -109,12 +109,12 @@ useEffect(()=>{
 
    {modalOpen && ( <Upload onClose={handleModalClose} />)}
    </div>
-   <div>
+   <div className='flex gap-5 flex-wrap justify-between'>
    {permanent?.map((project) => (
           <Perroject project={project}  />
         ))}
    </div>
-   <div>
+   <div className='flex gap-5 flex-wrap justify-between'>
    {projects?.map((project) => (
           <Project project={project} key={project._id} />
         ))}

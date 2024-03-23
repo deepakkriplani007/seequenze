@@ -22,7 +22,7 @@ const Project = ({project}) => {
         }
     }
   return (
-    <div  className='mt-5 p-5 bg-white inline-block rounded-md'>
+    <div  className='m-5 p-5 border-2 hover:border-[#fdc9ac] bg-white inline-block rounded-md'>
    <img className="border-2 p-1 w-[360px] rounded-md" src={project.imgpath} alt="imghere" />
         <div className=' flex flex-col content-center '>
           <div className='font-bold text-xl flex justify-center'>
