@@ -109,12 +109,12 @@ useEffect(()=>{
 
    {modalOpen && ( <Upload onClose={handleModalClose} />)}
    </div>
-   <div className='flex gap-5 flex-wrap justify-between'>
+   <div className='flex gap-5 flex-wrap '>
    {permanent?.map((project) => (
           <Perroject project={project}  />
         ))}
    </div>
-   <div className='flex gap-5 flex-wrap justify-between'>
+   <div className='flex gap-5 flex-wrap '>
    {projects?.map((project) => (
           <Project project={project} key={project._id} />
         ))}
