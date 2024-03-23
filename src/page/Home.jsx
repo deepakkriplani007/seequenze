@@ -51,7 +51,7 @@ useEffect(()=>{
  <>
  <Navbar/>
 <Sibebar/>
-<div className="p-4 bg-[#F8F8F8] w-full h-full sm:ml-64">
+<div className="p-4 bg-[#F8F8F8] w-screen h-full sm:ml-64">
    <div className="p-4 mt-14">
   <h1 className='pl-4 text-5xl font-bold'>My Project</h1>
       <button onClick={handleModalOpen} className='mt-5 p-5 bg-white inline-block rounded-md'>
